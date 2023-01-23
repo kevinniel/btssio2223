@@ -1,0 +1,88 @@
+body {
+    background-color: #152C5B;
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_nav {
+    padding: 0 30px;
+}
+
+.main_nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+
+.main_logo {
+    display: flex;
+    align-content: center;
+}
+
+.main_logo img {
+    max-width: 100%;
+}
+
+.main_nav a, .main_nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 20px;
+    height: 100%;
+    display: block;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.main_nav a:hover, .main_nav a:focus {
+    color: #b1b1ff;
+}
+
+.authentification {
+    display: flex;
+    gap: 10px;
+}
+
+.authentification a, .authentification a:visited {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.authentification a:hover, .authentification a:focus {
+    background-color: #fff;
+    color: #152C5B;
+}
+
+@media screen and (max-width: 1100px) {
+    .main_nav {
+        order: 2;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .main_logo, .authentification {
+        margin: 0 20px 20px 20px;
+    }
+    .main_nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header {
+        justify-content: center;
+    }
+}
