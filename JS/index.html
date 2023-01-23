@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cours de HTML</h1>
+    <h2>Ajouter des retraités</h2>
+    <form id="add_retraite">
+        <div class="bt">
+            <label for="lastname">Nom :</label>
+            <input type="text" name="lastname" id="lastname">
+            <div id="lastname_error" class="error"></div>
+        </div>
+        <div class="bt">
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="firstname" id="firstname">
+            <div id="firstname_error" class="error"></div>
+        </div>
+        <div class="bt">
+            <label for="age">Age :</label>
+            <input type="text" name="age" id="age">
+            <div id="age_error" class="error"></div>
+        </div>
+        <div class="bt">
+            <input type="submit" value="Ajouter !">
+            <button id="prefill">prefill</button>
+        </div>
+    </form>
+    <h2>Gestion des retraités</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Age</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
